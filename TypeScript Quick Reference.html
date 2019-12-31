@@ -1,0 +1,30 @@
+
+ ================================ Types ================================
+<!-- boolean:  -->
+let isDone: boolean = false;
+
+<!-- number:  -->
+let value: number = 6;
+
+<!-- string:  -->
+let name: string = "Something\n";
+
+<!-- array<>: -->
+let list: number[] = [1,2,3];
+let list2: Array<number> = [1, 2, 3];
+
+<!-- tuple:  -->
+let x: [string, number]; x = ["hello", 10];
+
+<!-- enum:  -->
+enum Color {Red, Green}; let c: Color = Color.Green;
+enum Test { V1=1,V2="123".length}; Test[Test.V1]==1;
+
+<!-- any:  -->
+let n: any = 4; n = "str"; n = false; let an: any[];
+void: function test(): void {…}
+
+
+ ================================ Iterators ================================
+for(let i in list) { returns keys "0", "1", "2", .. }
+for(let i of list) { returns values }
